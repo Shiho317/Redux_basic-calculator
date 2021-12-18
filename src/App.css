@@ -1,0 +1,76 @@
+#root {
+  display: grid;
+  width: 40%;
+  height: 100vh;
+  margin: auto;
+  align-content: center;
+}
+
+.result{
+  height: 150px;
+  background: black;
+}
+
+.resultValue{
+  text-align: end;
+  height: 100%;
+  font-size: 100px;
+  color: white;
+  padding-right: 15px;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  gap: 20px;
+  padding: 20px;
+}
+
+.button-wrapper button{
+  border-radius: 50%;
+  border: none;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background-color: #555555;
+  color: white;
+}
+
+.button-wrapper button:hover{
+  background-color: #999999;
+}
+
+.number{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: (3, 1fr);
+}
+
+.upper,
+.middle,
+.lower,
+.bottom{
+  display: flex;
+  gap: 20px;
+}
+
+.operator{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.operator button{
+  background-color: orange;
+}
+
+.operator button:hover{
+  background-color: #ffc7af;
+}
+
+.operator button:focus{
+  background-color: white;
+  color: orange;
+}
